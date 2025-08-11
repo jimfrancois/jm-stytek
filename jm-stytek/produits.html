@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits - J&M StyTek</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/images/StyTek_LOGO_PNG.png" alt="J&M StyTek Logo">
+                    </a>
+                    <span class="tagline">Gadgets Électroniques</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="produits.html" class="nav-link active">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h1 class="section-title">Nos Produits</h1>
+            <p class="section-subtitle">Découvrez notre sélection de gadgets électroniques de qualité</p>
+            
+            <!-- Search and Filter -->
+            <div class="products-controls">
+                <div class="search-container">
+                    <input type="text" id="product-search" placeholder="Rechercher un produit..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="laptops">Laptops</button>
+                    <button class="filter-btn" data-filter="smartphones">Smartphones</button>
+                    <button class="filter-btn" data-filter="casques">Casques</button>
+                    <button class="filter-btn" data-filter="chargeurs">Chargeurs</button>
+                </div>
+            </div>
+
+            <!-- Laptops Section -->
+            <div id="laptops" class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-laptop"></i>
+                    Laptops
+                </h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="laptops">
+                        <div class="product-image">
+                            <img src="assets/images/electronics-collection.jpg" alt="MacBook Pro 16">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Laptop</div>
+                            <h3 class="product-name">MacBook Pro 16"</h3>
+                            <p class="product-description">Ordinateur portable haute performance avec puce M2 Pro</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Puce Apple M2 Pro</li>
+                                    <li>16 Go de RAM</li>
+                                    <li>512 Go SSD</li>
+                                    <li>Écran Liquid Retina XDR 16"</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$2,749</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="laptops">
+                        <div class="product-image">
+                            <img src="assets/images/modern-gadgets.jpg" alt="Dell XPS 13">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Laptop</div>
+                            <h3 class="product-name">Dell XPS 13</h3>
+                            <p class="product-description">Ultrabook compact et puissant pour les professionnels</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Intel Core i7-1360P</li>
+                                    <li>16 Go de RAM</li>
+                                    <li>512 Go SSD</li>
+                                    <li>Écran 13.4" FHD+</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$1,759</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="laptops">
+                        <div class="product-image">
+                            <img src="assets/images/gadgets-hero.png" alt="ASUS ROG Strix">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Laptop Gaming</div>
+                            <h3 class="product-name">ASUS ROG Strix G15</h3>
+                            <p class="product-description">Laptop gaming haute performance pour les joueurs exigeants</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>AMD Ryzen 7 6800H</li>
+                                    <li>16 Go de RAM DDR5</li>
+                                    <li>1 To SSD</li>
+                                    <li>RTX 3070 Ti 8 Go</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$2,089</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smartphones Section -->
+            <div id="smartphones" class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-mobile-alt"></i>
+                    Smartphones
+                </h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="smartphones">
+                        <div class="product-image">
+                            <img src="assets/images/electronics-collection.jpg" alt="iPhone 15 Pro">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Smartphone</div>
+                            <h3 class="product-name">iPhone 15 Pro</h3>
+                            <p class="product-description">Le smartphone le plus avancé d'Apple avec puce A17 Pro</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Puce A17 Pro</li>
+                                    <li>128 Go de stockage</li>
+                                    <li>Écran Super Retina XDR 6.1"</li>
+                                    <li>Triple caméra 48 Mpx</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$1,352</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="smartphones">
+                        <div class="product-image">
+                            <img src="assets/images/modern-gadgets.jpg" alt="Samsung Galaxy S24">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Smartphone</div>
+                            <h3 class="product-name">Samsung Galaxy S24</h3>
+                            <p class="product-description">Smartphone Android premium avec IA intégrée</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Snapdragon 8 Gen 3</li>
+                                    <li>256 Go de stockage</li>
+                                    <li>Écran Dynamic AMOLED 6.2"</li>
+                                    <li>Triple caméra 50 Mpx</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$989</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="smartphones">
+                        <div class="product-image">
+                            <img src="assets/images/gadgets-hero.png" alt="Google Pixel 8">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Smartphone</div>
+                            <h3 class="product-name">Google Pixel 8</h3>
+                            <p class="product-description">Smartphone Google avec la meilleure expérience Android</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Google Tensor G3</li>
+                                    <li>128 Go de stockage</li>
+                                    <li>Écran OLED 6.2"</li>
+                                    <li>Double caméra 50 Mpx</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$769</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casques Section -->
+            <div id="casques" class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-headphones"></i>
+                    Casques
+                </h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="casques">
+                        <div class="product-image">
+                            <img src="assets/images/electronics-collection.jpg" alt="AirPods Max">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Casque Premium</div>
+                            <h3 class="product-name">Apple AirPods Max</h3>
+                            <p class="product-description">Casque circum-auriculaire avec réduction de bruit active</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Réduction de bruit active</li>
+                                    <li>Audio spatial</li>
+                                    <li>Autonomie 20h</li>
+                                    <li>Charge Lightning</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$692</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="casques">
+                        <div class="product-image">
+                            <img src="assets/images/modern-gadgets.jpg" alt="Sony WH-1000XM5">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Casque</div>
+                            <h3 class="product-name">Sony WH-1000XM5</h3>
+                            <p class="product-description">Casque sans fil avec la meilleure réduction de bruit</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Réduction de bruit leader</li>
+                                    <li>Autonomie 30h</li>
+                                    <li>Charge rapide</li>
+                                    <li>Multipoint Bluetooth</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">399 €</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="casques">
+                        <div class="product-image">
+                            <img src="assets/images/gadgets-hero.png" alt="Bose QuietComfort 45">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Casque</div>
+                            <h3 class="product-name">Bose QuietComfort 45</h3>
+                            <p class="product-description">Confort exceptionnel et réduction de bruit légendaire</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Réduction de bruit Bose</li>
+                                    <li>Autonomie 24h</li>
+                                    <li>Confort premium</li>
+                                    <li>Bluetooth 5.1</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">329 €</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chargeurs Section -->
+            <div id="chargeurs" class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-charging-station"></i>
+                    Chargeurs
+                </h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="chargeurs">
+                        <div class="product-image">
+                            <img src="assets/images/electronics-collection.jpg" alt="Chargeur MagSafe">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Chargeur Sans Fil</div>
+                            <h3 class="product-name">Apple MagSafe</h3>
+                            <p class="product-description">Chargeur sans fil magnétique pour iPhone</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Charge sans fil 15W</li>
+                                    <li>Magnétique</li>
+                                    <li>Compatible iPhone 12+</li>
+                                    <li>Câble USB-C 1m</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">45 €</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="chargeurs">
+                        <div class="product-image">
+                            <img src="assets/images/modern-gadgets.jpg" alt="Chargeur Anker">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Chargeur Rapide</div>
+                            <h3 class="product-name">Anker PowerPort III</h3>
+                            <p class="product-description">Chargeur USB-C 65W avec technologie GaN</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Puissance 65W</li>
+                                    <li>Technologie GaN</li>
+                                    <li>USB-C Power Delivery</li>
+                                    <li>Compact et portable</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">59 €</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="chargeurs">
+                        <div class="product-image">
+                            <img src="assets/images/gadgets-hero.png" alt="Station de charge">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Station de Charge</div>
+                            <h3 class="product-name">Belkin 3-in-1</h3>
+                            <p class="product-description">Station de charge pour iPhone, Apple Watch et AirPods</p>
+                            <div class="product-specs">
+                                <ul>
+                                    <li>Charge 3 appareils</li>
+                                    <li>MagSafe compatible</li>
+                                    <li>Design premium</li>
+                                    <li>Adaptateur inclus</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">149 €</div>
+                            <div class="product-actions">
+                                <a href="contact.html" class="btn btn-primary btn-small">
+                                    <i class="fas fa-phone"></i>
+                                    Contacter
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-info-circle"></i>
+                                    Infos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>J&M StyTek</h3>
+                    <p>Votre partenaire de confiance pour tous vos besoins en gadgets électroniques.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Catégories</h4>
+                    <ul>
+                        <li><a href="#laptops">Laptops</a></li>
+                        <li><a href="#smartphones">Smartphones</a></li>
+                        <li><a href="#casques">Casques</a></li>
+                        <li><a href="#chargeurs">Chargeurs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 18 Rue E. Dorvil, Fragneau Ville 26</p>
+                        <p><i class="fas fa-phone"></i> +509 49 46 74 43</p>
+                        <p><i class="fas fa-envelope"></i> contact@jmstytek.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 J&M StyTek. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <style>
+        .products-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .search-container {
+            position: relative;
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 3rem;
+            border: 2px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-color);
+            background: white;
+            color: var(--text-primary);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .category-section {
+            margin-bottom: 4rem;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .category-title i {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .products-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-container {
+                max-width: none;
+            }
+
+            .filter-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+</html>
+
