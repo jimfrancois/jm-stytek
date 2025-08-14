@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Bitter', Georgia, serif;
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-primary);
@@ -119,6 +119,7 @@ body {
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
+    letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
@@ -192,9 +193,10 @@ body {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.2;
     margin-bottom: 1.5rem;
     color: var(--text-primary);
+    letter-spacing: -0.01em;
 }
 
 .hero-title .highlight {
@@ -444,25 +446,35 @@ body {
 .footer {
     background: var(--bg-dark);
     color: white;
-    padding: 3rem 0 1rem;
+    padding: 2rem 0 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.footer-section h3,
-.footer-section h4 {
-    margin-bottom: 1rem;
+.footer-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
     color: white;
+    font-weight: 600;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: white;
+    font-weight: 500;
 }
 
 .footer-section p {
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 0.9rem;
 }
 
 .footer-section ul {
@@ -470,7 +482,7 @@ body {
 }
 
 .footer-section ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .footer-section ul li a {
@@ -490,8 +502,8 @@ body {
 }
 
 .social-links a {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
@@ -500,32 +512,37 @@ body {
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(128, 0, 128, 0.2);
+    box-shadow: 0 2px 6px rgba(128, 0, 128, 0.2);
+    font-size: 0.9rem;
 }
 
 .social-links a:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.3);
 }
 
 .contact-info p {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     color: var(--text-light);
+    font-size: 0.9rem;
 }
 
 .contact-info i {
     color: var(--primary-color);
     width: 1rem;
+    font-size: 0.85rem;
 }
 
 .footer-bottom {
-    border-top: 1px solid #334155;
-    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0.75rem;
     text-align: center;
     color: var(--text-light);
+    font-size: 0.85rem;
 }
 
 /* Product Styles */
@@ -561,17 +578,20 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 1rem;
 }
 
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
+    max-width: 300px;
+    margin: auto;
 }
 
 .product-card:hover .product-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .product-info {
